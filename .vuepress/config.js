@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Vue 3 UI (bluuweb - youtube)',
   description: 'Aprende a trabajar con UI',
-  base: '/vue3-ui/',
+  base: '/vue-3-ui/',
   locales:{
     '/':{
       lang: 'es-ES'

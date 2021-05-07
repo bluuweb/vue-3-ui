@@ -15,6 +15,24 @@ https://2x.antdv.com/docs/vue/introduce
 
 :::
 
+## Requisitos
+
+Cursos Previos:
+
+- [Fundamentos de JS](https://www.youtube.com/watch?v=Z4TuS0HEJP8&list=PLPl81lqbj-4I2ZOzryjPKxfhK3BzTlaJ7)
+- [DOM JS](https://www.youtube.com/watch?v=11MEBKljhFc&list=PLPl81lqbj-4I2ZOzryjPKxfhK3BzTlaJ7&index=4)
+- [Vue JS 2](https://www.youtube.com/watch?v=GAQB7Y4X5fM&list=PLPl81lqbj-4J-gfAERGDCdOQtVgRhSvIT)
+- [Vue 3 - Composition API](https://www.youtube.com/watch?v=eIAZAhYYiJI)
+- [Vue 3 - Provide e Injext](https://www.youtube.com/watch?v=76epsLAAOdQ)
+- [Vue 3 - Consumir API REST3](https://www.youtube.com/watch?v=QUZrjnprVQU)
+
+Extensiones VSCode:
+
+- [tema VSCode](https://marketplace.visualstudio.com/items?itemName=dbanksdesign.nu-disco)
+- [pintar Bracket](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+- [vue-vscode-snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+- [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+
 ## Getting Started
 
 Vue 3, Babel, Router
