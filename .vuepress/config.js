@@ -17,7 +17,9 @@ module.exports = {
     sidebar:
       [
         '/',
-        '/01-ant/',
+        '/01-quasar/',
+        '/02-ant/',
+        '/03-primevue/',
       ]
   }
  

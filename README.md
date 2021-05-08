@@ -11,8 +11,8 @@ Está guía está diseñada para poder obtener el código del curso "Vue 3 UI - 
 ## Cursos Vue 3
 
 - [Vue 3 - Composition API](https://www.youtube.com/watch?v=eIAZAhYYiJI)
-- [Vue 3 - Provide e Injext](https://www.youtube.com/watch?v=76epsLAAOdQ)
-- [Vue 3 - Consumir API REST3](https://www.youtube.com/watch?v=QUZrjnprVQU)
+- [Vue 3 - Provide e Inject](https://www.youtube.com/watch?v=76epsLAAOdQ)
+- [Vue 3 - Consumir API REST](https://www.youtube.com/watch?v=QUZrjnprVQU)
 
 Puedes apoyar al canal adquiriendo algún curso premium 🙌👌❤
 
@@ -34,3 +34,10 @@ Aprende desde cero a trabajar con <b>React.js y Firebase</b> aquí: [Inscríbete
 ## Preguntas y Respuestas
 
 - [https://discord.gg/xSceUPh](https://discord.gg/xSceUPh)
+
+## Extensiones VSCode:
+
+- [tema VSCode](https://marketplace.visualstudio.com/items?itemName=dbanksdesign.nu-disco)
+- [pintar Bracket](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+- [vue-vscode-snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+- [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
