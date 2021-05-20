@@ -465,3 +465,107 @@ export default {
 };
 </script>
 ```
+
+## Icons
+
+- [vue-components/icon](https://next.quasar.dev/vue-components/icon)
+
+quasar.conf.js
+
+```js
+extras: [
+  // 'ionicons-v4',
+  // 'mdi-v5',
+  // 'fontawesome-v5',
+  // 'eva-icons',
+  'themify',
+  // 'line-awesome',
+  // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
+
+  'roboto-font', // optional, you are not bound to it
+  'material-icons', // optional, you are not bound to it
+],
+```
+
+```vue
+<template>
+  <q-page padding>
+    <div class="text-center">
+      <q-icon name="trending_up" class="text-primary" size="200px" />
+      <q-icon name="ti-joomla" class="text-accent" size="200px" />
+    </div>
+  </q-page>
+</template>
+```
+
+- [vue-components/button](https://next.quasar.dev/vue-components/button#with-icon)
+
+```html
+<q-btn color="secondary" icon-right="ti-twitter" label="On Right" />
+```
+
+## SEO
+
+- [use-meta](https://next.quasar.dev/quasar-plugins/meta)
+
+:::tip
+Aproveche al máximo esta función usándola con Quasar CLI , especialmente para las compilaciones SSR (Server-Side Rendering) .
+
+También tiene sentido usarlo para SPA (aplicaciones de una sola página). Aunque la metainformación en este caso se agregará en tiempo de ejecución y no la proporcionará directamente el servidor web (como en las compilaciones SSR).
+:::
+
+quasar.conf.js
+
+```js
+plugins: ["Meta"];
+```
+
+vistas.vue
+
+```js
+import { useMeta } from "quasar";
+
+const metaData = {
+  title: "Inicio web Quasar",
+  meta: {
+    description: {
+      name: "description",
+      content: "Descripción de página de inicio",
+    },
+  },
+};
+
+export default {
+  setup() {
+    useMeta(metaData);
+  },
+};
+```
+
+### History
+
+quasar.conf.js
+
+```js
+build: {
+  vueRouterMode: "history";
+}
+```
+
+## SPA
+
+- [build SPA](https://next.quasar.dev/quasar-cli/developing-spa/deploying#introduction)
+
+```
+quasar build
+```
+
+## Redirects (history)
+
+Crear archivo `_redirects` en carpeta public:
+
+```
+/* /index.html  200
+```
+
+Subir a netlify! 🥳
