@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quasar FireChat | Vue 3 UI (bluuweb - youtube)</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="Aprende a trabajar con UI">
+    <link rel="preload" href="/vue-3-ui/assets/css/0.styles.be6e9a14.css" as="style"><link rel="preload" href="/vue-3-ui/assets/js/app.463c5912.js" as="script"><link rel="preload" href="/vue-3-ui/assets/js/2.a3928141.js" as="script"><link rel="preload" href="/vue-3-ui/assets/js/6.decf0ba4.js" as="script"><link rel="prefetch" href="/vue-3-ui/assets/js/10.39fb3d41.js"><link rel="prefetch" href="/vue-3-ui/assets/js/3.298b97e0.js"><link rel="prefetch" href="/vue-3-ui/assets/js/4.1bac2931.js"><link rel="prefetch" href="/vue-3-ui/assets/js/5.32ea8694.js"><link rel="prefetch" href="/vue-3-ui/assets/js/7.a0fbbe24.js"><link rel="prefetch" href="/vue-3-ui/assets/js/8.cac35b2a.js"><link rel="prefetch" href="/vue-3-ui/assets/js/9.1af1de8f.js">
+    <link rel="stylesheet" href="/vue-3-ui/assets/css/0.styles.be6e9a14.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-3-ui/" class="home-link router-link-active"><!----> <span class="site-name">Vue 3 UI (bluuweb - youtube)</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://bluuweb.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guías
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://youtube.com/bluuweb" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Youtube
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://curso-vue-js-udemy.bluuweb.cl" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Curso Vue 3
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://curso-react-js-udemy.bluuweb.cl" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Curso React
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://bluuweb.github.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guías
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://youtube.com/bluuweb" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Youtube
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://curso-vue-js-udemy.bluuweb.cl" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Curso Vue 3
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="http://curso-react-js-udemy.bluuweb.cl" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Curso React
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue-3-ui/" class="sidebar-link">Vue 3 UI (Guía bluuweb)</a></li><li><a href="/vue-3-ui/01-quasar/" class="sidebar-link">Quasar</a></li><li><a href="/vue-3-ui/01c-firechat/" class="sidebar-link">Quasar Chat</a></li><li><a href="/vue-3-ui/02-ant/" class="sidebar-link">Ant Design Vue</a></li><li><a href="/vue-3-ui/03-primevue/" class="sidebar-link">Prime Vue</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="quasar-firechat"><a href="#quasar-firechat" class="header-anchor">#</a> Quasar FireChat</h1> <ul><li><a href="https://next.quasar.dev/layout/gallery" target="_blank" rel="noopener noreferrer">layout/gallery<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="chatlayout-vue"><a href="#chatlayout-vue" class="header-anchor">#</a> ChatLayout.vue</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>WAL position-relative bg-grey-4<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value">style</span><span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-layout</span>
+      <span class="token attr-name">view</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lHh Lpr lFf<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>shadow-3 WAL__layout<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">container</span>
+    <span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-header</span> <span class="token attr-name">elevated</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-toolbar</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bg-grey-3 text-black<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>leftDrawerOpen = true<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>WAL__drawer-open q-mr-sm<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>keyboard_arrow_left<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">round</span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-avatar</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>currentConversation.avatar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-avatar</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-btn</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>q-subtitle-1 q-pl-md<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            {{ currentConversation.person }}
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-space</span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">round</span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-icon</span>
+              <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>attachment<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>rotate-135<span class="token punctuation">&quot;</span></span>
+            <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-btn</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>more_vert<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-menu</span>
+              <span class="token attr-name">auto-close</span>
+              <span class="token attr-name">:offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[110, 0]<span class="token punctuation">&quot;</span></span>
+            <span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-list</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">min-width</span><span class="token punctuation">:</span> 150px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Contact data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Block<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Select messages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Silence<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Clear messages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Erase messages<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-list</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-menu</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-btn</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-toolbar</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-header</span><span class="token punctuation">&gt;</span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-drawer</span>
+        <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>leftDrawerOpen<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">show-if-above</span>
+        <span class="token attr-name">bordered</span>
+        <span class="token attr-name">:breakpoint</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>690<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-toolbar</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-avatar</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>cursor-pointer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://cdn.quasar.dev/app-icons/icon-128x128.png<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-avatar</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-space</span> <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>message<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>more_vert<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-menu</span>
+              <span class="token attr-name">auto-close</span>
+              <span class="token attr-name">:offset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[110, 8]<span class="token punctuation">&quot;</span></span>
+            <span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-list</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">min-width</span><span class="token punctuation">:</span> 150px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>New group<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Profile<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Archived<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Favorites<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Settings<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span> <span class="token attr-name">clickable</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>Logout<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-list</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-menu</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-btn</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>close<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>WAL__drawer-close<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>leftDrawerOpen = false<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-toolbar</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-toolbar</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bg-grey-2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-input</span>
+            <span class="token attr-name">rounded</span>
+            <span class="token attr-name">outlined</span>
+            <span class="token attr-name">dense</span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>WAL__field full-width<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">bg-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>white<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Search or start a new conversation<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-input</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-toolbar</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-scroll-area</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">height</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>100% - 100px<span class="token punctuation">)</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-list</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item</span>
+              <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>(conversation, index) in conversations<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>conversation.id<span class="token punctuation">&quot;</span></span>
+              <span class="token attr-name">clickable</span>
+              <span class="token attr-name">v-ripple</span>
+              <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>currentConversationIndex = index<span class="token punctuation">&quot;</span></span>
+            <span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span> <span class="token attr-name">avatar</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-avatar</span><span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>conversation.avatar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-avatar</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-label</span> <span class="token attr-name">lines</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                  {{ conversation.person }}
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-label</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-label</span>
+                  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>conversation__summary<span class="token punctuation">&quot;</span></span>
+                  <span class="token attr-name">caption</span>
+                <span class="token punctuation">&gt;</span></span>
+                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-icon</span>
+                    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>check<span class="token punctuation">&quot;</span></span>
+                    <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>conversation.sent<span class="token punctuation">&quot;</span></span>
+                  <span class="token punctuation">/&gt;</span></span>
+                  <span class="token comment">&lt;!-- &lt;q-icon name=&quot;not_interested&quot; v-if=&quot;conversation.deleted&quot; /&gt; --&gt;</span>
+                  {{ conversation.caption }}
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-label</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-section</span> <span class="token attr-name">side</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-item-label</span> <span class="token attr-name">caption</span><span class="token punctuation">&gt;</span></span>
+                  {{ conversation.time }}
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-label</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-icon</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>keyboard_arrow_down<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item-section</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-item</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-list</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-scroll-area</span><span class="token punctuation">&gt;</span></span>
+
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-drawer</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-page-container</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bg-grey-2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-view</span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-page-container</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-footer</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-toolbar</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bg-grey-3 text-black row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>insert_emoticon<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>q-mr-sm<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-input</span>
+            <span class="token attr-name">rounded</span>
+            <span class="token attr-name">outlined</span>
+            <span class="token attr-name">dense</span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>WAL__field col-grow q-mr-sm<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">bg-color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>white<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>message<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Type a message<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span>
+            <span class="token attr-name">round</span>
+            <span class="token attr-name">flat</span>
+            <span class="token attr-name">icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mic<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-toolbar</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-footer</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-layout</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ref<span class="token punctuation">,</span> computed <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useQuasar <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;quasar&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> leftDrawerOpen <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> $q <span class="token operator">=</span> <span class="token function">useQuasar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> search <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> message <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> currentConversationIndex <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> conversations <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        person<span class="token operator">:</span> <span class="token string">&quot;Razvan Stoenescu&quot;</span><span class="token punctuation">,</span>
+        avatar<span class="token operator">:</span> <span class="token string">&quot;https://cdn.quasar.dev/team/razvan_stoenescu.jpeg&quot;</span><span class="token punctuation">,</span>
+        caption<span class="token operator">:</span> <span class="token string">&quot;I'm working on Quasar!&quot;</span><span class="token punctuation">,</span>
+        time<span class="token operator">:</span> <span class="token string">&quot;15:00&quot;</span><span class="token punctuation">,</span>
+        sent<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        person<span class="token operator">:</span> <span class="token string">&quot;Dan Popescu&quot;</span><span class="token punctuation">,</span>
+        avatar<span class="token operator">:</span> <span class="token string">&quot;https://cdn.quasar.dev/team/dan_popescu.jpg&quot;</span><span class="token punctuation">,</span>
+        caption<span class="token operator">:</span> <span class="token string">&quot;I'm working on Quasar!&quot;</span><span class="token punctuation">,</span>
+        time<span class="token operator">:</span> <span class="token string">&quot;16:00&quot;</span><span class="token punctuation">,</span>
+        sent<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        person<span class="token operator">:</span> <span class="token string">&quot;Jeff Galbraith&quot;</span><span class="token punctuation">,</span>
+        avatar<span class="token operator">:</span> <span class="token string">&quot;https://cdn.quasar.dev/team/jeff_galbraith.jpg&quot;</span><span class="token punctuation">,</span>
+        caption<span class="token operator">:</span> <span class="token string">&quot;I'm working on Quasar!&quot;</span><span class="token punctuation">,</span>
+        time<span class="token operator">:</span> <span class="token string">&quot;18:00&quot;</span><span class="token punctuation">,</span>
+        sent<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+        person<span class="token operator">:</span> <span class="token string">&quot;Allan Gaunt&quot;</span><span class="token punctuation">,</span>
+        avatar<span class="token operator">:</span> <span class="token string">&quot;https://cdn.quasar.dev/team/allan_gaunt.png&quot;</span><span class="token punctuation">,</span>
+        caption<span class="token operator">:</span> <span class="token string">&quot;I'm working on Quasar!&quot;</span><span class="token punctuation">,</span>
+        time<span class="token operator">:</span> <span class="token string">&quot;17:00&quot;</span><span class="token punctuation">,</span>
+        sent<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> style <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        height<span class="token operator">:</span> $q<span class="token punctuation">.</span>screen<span class="token punctuation">.</span>height <span class="token operator">+</span> <span class="token string">&quot;px&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> currentConversation <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> conversations<span class="token punctuation">.</span>value<span class="token punctuation">[</span>currentConversationIndex<span class="token punctuation">.</span>value<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      leftDrawerOpen<span class="token punctuation">,</span>
+      style<span class="token punctuation">,</span>
+      search<span class="token punctuation">,</span>
+      message<span class="token punctuation">,</span>
+      conversations<span class="token punctuation">,</span>
+      currentConversation<span class="token punctuation">,</span>
+      currentConversationIndex<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>sass<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+.WAL
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%
+    <span class="token property">height</span><span class="token punctuation">:</span> 100%
+    <span class="token property">padding-top</span><span class="token punctuation">:</span> 20px
+    <span class="token property">padding-bottom</span><span class="token punctuation">:</span> 20px
+    &amp;<span class="token punctuation">:</span>before
+        <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">''</span>
+        <span class="token property">height</span><span class="token punctuation">:</span> 127px
+        <span class="token property">position</span><span class="token punctuation">:</span> fixed
+        <span class="token property">top</span><span class="token punctuation">:</span> 0
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%
+        <span class="token property">background-color</span><span class="token punctuation">:</span> #009688
+    &amp;__layout
+        <span class="token property">margin</span><span class="token punctuation">:</span> 0 auto
+        <span class="token property">z-index</span><span class="token punctuation">:</span> 4000
+        <span class="token property">height</span><span class="token punctuation">:</span> 100%
+        <span class="token property">width</span><span class="token punctuation">:</span> 90%
+        <span class="token property">max-width</span><span class="token punctuation">:</span> 950px
+        <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px
+    &amp;__field.q-field--outlined .<span class="token property">q-field__control</span><span class="token punctuation">:</span>before
+        <span class="token property">border</span><span class="token punctuation">:</span> none
+.q-drawer--standard
+    .WAL__drawer-close
+        <span class="token property">display</span><span class="token punctuation">:</span> none
+@media <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 850px<span class="token punctuation">)</span>
+.WAL
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0
+    &amp;__layout
+        <span class="token property">width</span><span class="token punctuation">:</span> 100%
+        <span class="token property">border-radius</span><span class="token punctuation">:</span> 0
+@media <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 691px<span class="token punctuation">)</span>
+.WAL
+    &amp;__drawer-open
+        <span class="token property">display</span><span class="token punctuation">:</span> none
+.conversation__summary
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 4px
+.conversation__more
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 0<span class="token important">!important</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 1.4rem
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h2> <ul><li><a href="https://next.vuex.vuejs.org/guide/modules.html#namespacing" target="_blank" rel="noopener noreferrer">modules-namespacing<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p>store/index.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>
+  store
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'quasar/wrappers'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  createStore
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token keyword">import</span> mensajes <span class="token keyword">from</span> <span class="token string">'./mensajes'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">store</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span> <span class="token comment">/* { ssrContext } */</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> Store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+      mensajes
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    strict<span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">DEBUGGING</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> Store
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>mensajes/index.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  namespaced<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">state</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    activo<span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">setActivo</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>activo <span class="token operator">=</span> payload
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>ejemploComponents</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-btn</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mutar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Mutar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-btn</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-page</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span> Mensajes <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>mensajes<span class="token punctuation">.</span>activo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">mutar</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">&quot;mensajes/setActivo&quot;</span><span class="token punctuation">,</span> <span class="token operator">!</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>mensajes<span class="token punctuation">.</span>activo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>mensajes<span class="token punctuation">.</span>activo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> mutar <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="mensajes"><a href="#mensajes" class="header-anchor">#</a> Mensajes</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>q-pa-md row justify-center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span> <span class="token property">max-width</span><span class="token punctuation">:</span> 400px</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-chat-message</span>
+        <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mensaje in mensajes<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mensaje.id<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mensaje.nombre<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>[mensaje.texto]<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:sent</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mensaje.uid === 'gato' ? true : false<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ref <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> mensajes <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        uid<span class="token operator">:</span> <span class="token string">&quot;gato&quot;</span><span class="token punctuation">,</span>
+        nombre<span class="token operator">:</span> <span class="token string">&quot;gato&quot;</span><span class="token punctuation">,</span>
+        texto<span class="token operator">:</span> <span class="token string">&quot;Hola 1&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        uid<span class="token operator">:</span> <span class="token string">&quot;perro&quot;</span><span class="token punctuation">,</span>
+        nombre<span class="token operator">:</span> <span class="token string">&quot;perro&quot;</span><span class="token punctuation">,</span>
+        texto<span class="token operator">:</span> <span class="token string">&quot;Hola 2&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        uid<span class="token operator">:</span> <span class="token string">&quot;perro&quot;</span><span class="token punctuation">,</span>
+        nombre<span class="token operator">:</span> <span class="token string">&quot;perro&quot;</span><span class="token punctuation">,</span>
+        texto<span class="token operator">:</span> <span class="token string">&quot;Hola 3&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        id<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+        uid<span class="token operator">:</span> <span class="token string">&quot;gato&quot;</span><span class="token punctuation">,</span>
+        nombre<span class="token operator">:</span> <span class="token string">&quot;gato&quot;</span><span class="token punctuation">,</span>
+        texto<span class="token operator">:</span> <span class="token string">&quot;Hola 4&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> mensajes <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Vista</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-page</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Mensajes</span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-page</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> Mensajes <span class="token keyword">from</span> <span class="token string">&quot;../components/Mensajes&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span> Mensajes <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-3-ui/assets/js/app.463c5912.js" defer></script><script src="/vue-3-ui/assets/js/2.a3928141.js" defer></script><script src="/vue-3-ui/assets/js/6.decf0ba4.js" defer></script>
+  </body>
+</html>
