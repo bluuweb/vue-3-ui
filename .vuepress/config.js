@@ -18,6 +18,7 @@ module.exports = {
       "/",
       "/01-quasar/",
       "/01c-firechat/",
+      "/01d-calculadora/",
       "/02-ant/",
       "/03-primevue/",
     ],
